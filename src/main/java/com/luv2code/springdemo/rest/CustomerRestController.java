@@ -21,7 +21,7 @@ public class CustomerRestController {
         return customerService.getCustomers();
     }
 
-    @GetMapping("/customer/{customerId}")
+    @GetMapping("/customers/{customerId}")
     public Customer getCustomerById(@PathVariable int customerId) {
         Customer customer = customerService.getCustomer(customerId);
         if (customer == null) {
